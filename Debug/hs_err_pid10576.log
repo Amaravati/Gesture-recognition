@@ -1,0 +1,265 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x688dd00c, pid=10576, tid=8648
+#
+# JRE version: 6.0_39-b04
+# Java VM: Java HotSpot(TM) Client VM (20.14-b01 mixed mode windows-x86 )
+# Problematic frame:
+# C  [TpsdkServer.dll+0x3d00c]
+#
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x01d9f400):  VMThread [stack: 0x2c760000,0x2c860000] [id=8648]
+
+siginfo: ExceptionCode=0xc0000005, reading address 0x00000064
+
+Registers:
+EAX=0x00000000, EBX=0x00000000, ECX=0x00000000, EDX=0x2c85fba4
+ESP=0x2c85fb84, EBP=0x2c85fbbc, ESI=0x01d9f528, EDI=0x2d013d34
+EIP=0x688dd00c, EFLAGS=0x00010202
+
+Top of Stack: (sp=0x2c85fb84)
+0x2c85fb84:   56b23eea 6890c29c 33f2d0b0 00000000
+0x2c85fb94:   2c85fbac 00000000 003a07f3 359166ec
+0x2c85fba4:   01d9f528 35111ff0 2c85fbf4 68902990
+0x2c85fbb4:   00000000 3507bdc8 2c85fbcc 688af7ad
+0x2c85fbc4:   00000000 3507bdb0 2c85fc00 64797511
+0x2c85fbd4:   33be0850 00000000 00000016 3507bdb0
+0x2c85fbe4:   64797feb 252a3357 3507bdb0 3507bdb0
+0x2c85fbf4:   2c85fc44 647b96c8 00000000 2c85fc0c 
+
+Instructions: (pc=0x688dd00c)
+0x688dcfec:   24 28 64 89 0d 00 00 00 00 59 5f 5e 5b 8b e5 5d
+0x688dcffc:   c2 04 00 8b 7f 0c 3b fb 0f 84 81 00 00 00 8b 0e
+0x688dd00c:   8b 51 64 57 56 ff d2 8b d8 85 db 74 72 8b 06 8b
+0x688dd01c:   48 60 6a 00 53 56 ff d1 84 c0 75 63 0f b7 45 08 
+
+
+Register to memory mapping:
+
+EAX=
+[error occurred during error reporting (printing register info), id 0xc0000005]
+
+Stack: [0x2c760000,0x2c860000],  sp=0x2c85fb84,  free space=1022k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [TpsdkServer.dll+0x3d00c]  TPSDK::GetChildExpressions+0xc4c
+C  [TpsdkServer.dll+0xf7ad]  TPSDK::MixedInstruction::MixedInstruction+0x1ed
+C  [Symman.dll+0x27511]  DllGetClassObject+0x18271
+C  [Symman.dll+0x2802b]  DllGetClassObject+0x18d8b
+C  [Symman.dll+0x26de6]  DllGetClassObject+0x17b46
+C  [Symman.dll+0x3f4c3]  DllGetClassObject+0x30223
+C  [Symman.dll+0x3fb1c]  DllGetClassObject+0x3087c
+C  [Symman.dll+0x478f4]  DllGetClassObject+0x38654
+C  [Symman.dll+0x47971]  DllGetClassObject+0x386d1
+C  [ntdll.dll+0x39254]  RtlQueryEnvironmentVariable+0x275
+C  [ntdll.dll+0x509fa]  LdrShutdownProcess+0x141
+C  [ntdll.dll+0x5089c]  RtlExitUserProcess+0x74
+C  [kernel32.dll+0x179ed]  ExitProcess+0x15
+C  [MSVCR71.dll+0x8d04]  exit+0x0
+C  [MSVCR71.dll+0x8d11]  exit+0xd
+V  [jvm.dll+0x11e4dd]
+V  [jvm.dll+0x11d7ee]
+V  [jvm.dll+0x11db12]
+V  [jvm.dll+0x11df22]
+V  [jvm.dll+0x14217c]
+C  [MSVCR71.dll+0x9565]  endthreadex+0xa0
+C  [kernel32.dll+0x1338a]  BaseThreadInitThunk+0x12
+C  [ntdll.dll+0x397f2]  RtlInitializeExceptionChain+0x63
+C  [ntdll.dll+0x397c5]  RtlInitializeExceptionChain+0x36
+
+VM_Operation (0x0018fae0): Exit, mode: safepoint, requested by thread 0x01ce9800
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x2d10c800 JavaThread "Worker-4" [_thread_in_native, id=9944, stack(0x31490000,0x31590000)]
+  0x01ddb000 JavaThread "Low Memory Detector" daemon [_thread_blocked, id=7048, stack(0x2cee0000,0x2cfe0000)]
+  0x01dd6800 JavaThread "C1 CompilerThread0" daemon [_thread_blocked, id=10728, stack(0x2cda0000,0x2cea0000)]
+  0x01dd5800 JavaThread "Attach Listener" daemon [_thread_blocked, id=2968, stack(0x2cc60000,0x2cd60000)]
+  0x01dd2800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=6644, stack(0x2cb20000,0x2cc20000)]
+  0x01da7800 JavaThread "Finalizer" daemon [_thread_blocked, id=8132, stack(0x2c9e0000,0x2cae0000)]
+  0x01da2c00 JavaThread "Reference Handler" daemon [_thread_blocked, id=10776, stack(0x2c8a0000,0x2c9a0000)]
+  0x01ce9800 JavaThread "main" [_thread_blocked, id=8076, stack(0x00090000,0x00190000)]
+
+Other Threads:
+=>0x01d9f400 VMThread [stack: 0x2c760000,0x2c860000] [id=8648]
+
+VM state:at safepoint (shutting down)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x01ce7ae0] Threads_lock - owner thread: 0x01d9f400
+
+Heap
+ def new generation   total 47552K, used 34415K [0x044d0000, 0x07860000, 0x0ef70000)
+  eden space 42304K,  68% used [0x044d0000, 0x0614bc78, 0x06e20000)
+  from space 5248K, 100% used [0x06e20000, 0x07340000, 0x07340000)
+  to   space 5248K,   0% used [0x07340000, 0x07340000, 0x07860000)
+ tenured generation   total 105440K, used 97250K [0x0ef70000, 0x15668000, 0x244d0000)
+   the space 105440K,  92% used [0x0ef70000, 0x14e68820, 0x14e68a00, 0x15668000)
+ compacting perm gen  total 58112K, used 57974K [0x244d0000, 0x27d90000, 0x2c4d0000)
+   the space 58112K,  99% used [0x244d0000, 0x27d6da58, 0x27d6dc00, 0x27d90000)
+No shared spaces configured.
+
+Code Cache  [0x024d0000, 0x02df0000, 0x044d0000)
+ total_blobs=4728 nmethods=4492 adapters=169 free_code_cache=23998592 largest_free_block=384
+
+Dynamic libraries:
+0x00400000 - 0x0040d000 	C:\Analog_Devices\CrossCore_Embedded Studio_1.2.0\Eclipse\cces.exe
+0x772d0000 - 0x77450000 	C:\Windows\SysWOW64\ntdll.dll
+0x75a30000 - 0x75b40000 	C:\Windows\syswow64\kernel32.dll
+0x75dc0000 - 0x75e07000 	C:\Windows\syswow64\KERNELBASE.dll
+0x75930000 - 0x75a30000 	C:\Windows\syswow64\USER32.dll
+0x76c90000 - 0x76d20000 	C:\Windows\syswow64\GDI32.dll
+0x75760000 - 0x7576a000 	C:\Windows\syswow64\LPK.dll
+0x76da0000 - 0x76e3d000 	C:\Windows\syswow64\USP10.dll
+0x75520000 - 0x755cc000 	C:\Windows\syswow64\msvcrt.dll
+0x75680000 - 0x75721000 	C:\Windows\syswow64\ADVAPI32.dll
+0x75730000 - 0x75749000 	C:\Windows\SysWOW64\sechost.dll
+0x75cd0000 - 0x75dc0000 	C:\Windows\syswow64\RPCRT4.dll
+0x74c30000 - 0x74c90000 	C:\Windows\syswow64\SspiCli.dll
+0x74c20000 - 0x74c2c000 	C:\Windows\syswow64\CRYPTBASE.dll
+0x6db20000 - 0x6dba4000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_5.82.7601.18837_none_ec86b8d6858ec0bc\COMCTL32.dll
+0x76b80000 - 0x76be0000 	C:\Windows\system32\IMM32.DLL
+0x75e30000 - 0x75efc000 	C:\Windows\syswow64\MSCTF.dll
+0x72000000 - 0x7200d000 	C:\Analog_Devices\CrossCore_Embedded Studio_1.2.0\Eclipse\plugins\org.eclipse.equinox.launcher.win32.win32.x86_1.1.100.v20110502\eclipse_1406.dll
+0x749b0000 - 0x749b9000 	C:\Windows\system32\VERSION.dll
+0x6d7f0000 - 0x6daa0000 	C:\Analog_Devices\CrossCore_Embedded Studio_1.2.0\Eclipse\jre\bin\client\jvm.dll
+0x700f0000 - 0x70122000 	C:\Windows\system32\WINMM.dll
+0x7c340000 - 0x7c396000 	C:\Analog_Devices\CrossCore_Embedded Studio_1.2.0\Eclipse\jre\bin\MSVCR71.dll
+0x6fea0000 - 0x6feec000 	C:\Windows\system32\apphelp.dll
+0x6d7a0000 - 0x6d7ac000 	C:\Analog_Devices\CrossCore_Embedded Studio_1.2.0\Eclipse\jre\bin\verify.dll
+0x6d320000 - 0x6d33f000 	C:\Analog_Devices\CrossCore_Embedded Studio_1.2.0\Eclipse\jre\bin\java.dll
+0x6d7e0000 - 0x6d7ef000 	C:\Analog_Devices\CrossCore_Embedded Studio_1.2.0\Eclipse\jre\bin\zip.dll
+0x72e00000 - 0x72e17000 	C:\Windows\system32\CRYPTSP.dll
+0x72dc0000 - 0x72dfb000 	C:\Windows\system32\rsaenh.dll
+0x76d20000 - 0x76d37000 	C:\Windows\syswow64\USERENV.dll
+0x75f10000 - 0x75f1b000 	C:\Windows\syswow64\profapi.dll
+0x6d600000 - 0x6d613000 	C:\Analog_Devices\CrossCore_Embedded Studio_1.2.0\Eclipse\jre\bin\net.dll
+0x754e0000 - 0x75515000 	C:\Windows\syswow64\WS2_32.dll
+0x75750000 - 0x75756000 	C:\Windows\syswow64\NSI.dll
+0x2d320000 - 0x2d35c000 	C:\Windows\system32\mswsock.dll
+0x6dbb0000 - 0x6dbb6000 	C:\Windows\System32\wship6.dll
+0x6ee00000 - 0x6ee10000 	C:\Windows\system32\NLAapi.dll
+0x70390000 - 0x703a0000 	C:\Windows\system32\napinsp.dll
+0x70330000 - 0x70342000 	C:\Windows\system32\pnrpnsp.dll
+0x6fdf0000 - 0x6fe34000 	C:\Windows\system32\DNSAPI.dll
+0x700b0000 - 0x700b8000 	C:\Windows\System32\winrnr.dll
+0x71fd0000 - 0x71fd5000 	C:\Windows\System32\wshtcpip.dll
+0x70040000 - 0x7005c000 	C:\Windows\system32\IPHLPAPI.DLL
+0x70030000 - 0x70037000 	C:\Windows\system32\WINNSI.DLL
+0x6c7a0000 - 0x6c7a6000 	C:\Windows\system32\rasadhlp.dll
+0x6c760000 - 0x6c798000 	C:\Windows\System32\fwpuclnt.dll
+0x70590000 - 0x70610000 	C:\Windows\system32\uxtheme.dll
+0x75b60000 - 0x75cbc000 	C:\Windows\system32\ole32.dll
+0x6d620000 - 0x6d629000 	C:\Analog_Devices\CrossCore_Embedded Studio_1.2.0\Eclipse\jre\bin\nio.dll
+0x76e40000 - 0x76ecf000 	C:\Windows\syswow64\OLEAUT32.DLL
+0x2e8f0000 - 0x2e95e000 	C:\Analog_Devices\CrossCore_Embedded Studio_1.2.0\Eclipse\configuration\org.eclipse.osgi\bundles\232\1\.cp\swt-win32-3740.dll
+0x75770000 - 0x757eb000 	C:\Windows\syswow64\comdlg32.dll
+0x76c30000 - 0x76c87000 	C:\Windows\syswow64\SHLWAPI.dll
+0x747b0000 - 0x7494e000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.18837_none_41e855142bd5705d\COMCTL32.dll
+0x75f30000 - 0x76b7b000 	C:\Windows\syswow64\SHELL32.dll
+0x6fe40000 - 0x6fe91000 	C:\Windows\system32\WINSPOOL.DRV
+0x75250000 - 0x75443000 	C:\Windows\syswow64\WININET.dll
+0x75b40000 - 0x75b44000 	C:\Windows\syswow64\api-ms-win-downlevel-user32-l1-1-0.dll
+0x75b50000 - 0x75b54000 	C:\Windows\syswow64\api-ms-win-downlevel-shlwapi-l1-1-0.dll
+0x75640000 - 0x75644000 	C:\Windows\syswow64\api-ms-win-downlevel-version-l1-1-0.dll
+0x75920000 - 0x75923000 	C:\Windows\syswow64\api-ms-win-downlevel-normaliz-l1-1-0.dll
+0x772a0000 - 0x772a3000 	C:\Windows\syswow64\normaliz.DLL
+0x74f80000 - 0x751b2000 	C:\Windows\syswow64\iertutil.dll
+0x75f20000 - 0x75f25000 	C:\Windows\syswow64\api-ms-win-downlevel-advapi32-l1-1-0.dll
+0x757f0000 - 0x75911000 	C:\Windows\syswow64\CRYPT32.dll
+0x75630000 - 0x7563c000 	C:\Windows\syswow64\MSASN1.dll
+0x70570000 - 0x70583000 	C:\Windows\system32\dwmapi.dll
+0x70130000 - 0x70225000 	C:\Windows\system32\propsys.dll
+0x751c0000 - 0x75243000 	C:\Windows\syswow64\CLBCatQ.DLL
+0x2d4f0000 - 0x2d50d000 	C:\Analog_Devices\CrossCore_Embedded Studio_1.2.0\Eclipse\configuration\org.eclipse.osgi\bundles\232\1\.cp\swt-gdip-win32-3740.dll
+0x2eae0000 - 0x2ec70000 	C:\Windows\WinSxS\x86_microsoft.windows.gdiplus_6595b64144ccf1df_1.1.7601.19061_none_72d6d48d86649709\gdiplus.dll
+0x71c70000 - 0x71da1000 	C:\Windows\system32\WindowsCodecs.dll
+0x2e470000 - 0x2e47e000 	C:\Analog_Devices\CrossCore_Embedded Studio_1.2.0\Eclipse\configuration\org.eclipse.osgi\bundles\114\1\.cp\os\win32\x86\localfile_1_0_0.dll
+0x74760000 - 0x7479c000 	C:\Windows\system32\oleacc.dll
+0x71fe0000 - 0x71fee000 	C:\Windows\system32\RpcRtRemote.dll
+0x6af70000 - 0x6af9e000 	C:\Windows\system32\mlang.dll
+0x747a0000 - 0x747a5000 	C:\Windows\system32\msimg32.dll
+0x6ea30000 - 0x6ea3f000 	C:\Analog_Devices\CrossCore_Embedded Studio_1.2.0\Eclipse\configuration\org.eclipse.osgi\bundles\117\1\.cp\jWinHttp-1.0.0.dll
+0x6ff40000 - 0x6ff98000 	C:\Windows\system32\WINHTTP.dll
+0x6fef0000 - 0x6ff3f000 	C:\Windows\system32\webio.dll
+0x6ffa0000 - 0x6ffad000 	C:\Windows\system32\dhcpcsvc6.DLL
+0x6dbd0000 - 0x6dbe2000 	C:\Windows\system32\dhcpcsvc.DLL
+0x6c750000 - 0x6c758000 	C:\Windows\system32\credssp.dll
+0x76d70000 - 0x76d97000 	C:\Windows\syswow64\CFGMGR32.dll
+0x689a0000 - 0x68af9000 	C:\Analog_Devices\CrossCore_Embedded Studio_1.2.0\System\flex.dll
+0x70a00000 - 0x70a11000 	C:\Windows\system32\NETAPI32.dll
+0x70a40000 - 0x70a49000 	C:\Windows\system32\netutils.dll
+0x709c0000 - 0x709d9000 	C:\Windows\system32\srvcli.dll
+0x709f0000 - 0x709ff000 	C:\Windows\system32\wkscli.dll
+0x72030000 - 0x72037000 	C:\Windows\system32\WSOCK32.dll
+0x68960000 - 0x6899c000 	C:\Analog_Devices\CrossCore_Embedded Studio_1.2.0\System\ADspCommon.dll
+0x72040000 - 0x720a9000 	C:\Windows\system32\MSVCP100.dll
+0x72250000 - 0x7230f000 	C:\Windows\system32\MSVCR100.dll
+0x688a0000 - 0x6895e000 	C:\Analog_Devices\CrossCore_Embedded Studio_1.2.0\System\TpsdkServer.dll
+0x6ae90000 - 0x6aeb6000 	C:\Windows\system32\ATL100.DLL
+0x6e7c0000 - 0x6e7cb000 	C:\Analog_Devices\CrossCore_Embedded Studio_1.2.0\Eclipse\plugins\org.eclipse.cdt.core.win32.x86_5.2.0.201202111925\os\win32\x86\spawner.dll
+0x71e20000 - 0x71f78000 	C:\Windows\System32\msxml6.dll
+0x71e00000 - 0x71e17000 	C:\Windows\System32\bcrypt.dll
+0x686a0000 - 0x68894000 	C:\Analog_Devices\CrossCore_Embedded Studio_1.2.0\System\cftarget.dll
+0x339f0000 - 0x33bcc000 	C:\Analog_Devices\CrossCore_Embedded Studio_1.2.0\System\xerces-c_3_1.dll
+0x63db0000 - 0x641e8000 	C:\Windows\system32\mfc100.dll
+0x70010000 - 0x7001d000 	C:\Windows\system32\MFC100ENU.DLL
+0x68530000 - 0x686a0000 	C:\Analog_Devices\CrossCore_Embedded Studio_1.2.0\System\Sim10x.dll
+0x682f0000 - 0x68525000 	C:\Analog_Devices\CrossCore_Embedded Studio_1.2.0\System\WmBlackfinIce.dll
+0x639b0000 - 0x63ba6000 	C:\Analog_Devices\CrossCore_Embedded Studio_1.2.0\System\WmSDUBlackfin.dll
+0x62800000 - 0x62a07000 	C:\Analog_Devices\CrossCore_Embedded Studio_1.2.0\System\simzpls.dll
+0x60940000 - 0x60c0e000 	C:\Analog_Devices\CrossCore_Embedded Studio_1.2.0\System\WmSharcIce.dll
+0x63c40000 - 0x63dac000 	C:\Analog_Devices\CrossCore_Embedded Studio_1.2.0\System\emublackfin.dll
+0x6e8c0000 - 0x6e8c9000 	C:\Analog_Devices\CrossCore_Embedded Studio_1.2.0\System\WmKitSelector.dll
+0x68c30000 - 0x68c4e000 	C:\Analog_Devices\CrossCore_Embedded Studio_1.2.0\System\libusb-1.0.dll
+0x6dbc0000 - 0x6dbcc000 	C:\Analog_Devices\CrossCore_Embedded Studio_1.2.0\System\emudap.dll
+0x74de0000 - 0x74f7d000 	C:\Windows\syswow64\SetupAPI.dll
+0x75e10000 - 0x75e22000 	C:\Windows\syswow64\DEVOBJ.dll
+0x72310000 - 0x72317000 	C:\Windows\system32\WinUSB.DLL
+0x71540000 - 0x71549000 	C:\Windows\system32\hid.dll
+0x76d40000 - 0x76d6f000 	C:\Windows\syswow64\WINTRUST.dll
+0x63570000 - 0x6368d000 	C:\Analog_Devices\CrossCore_Embedded Studio_1.2.0\System\WmSonar.dll
+0x74c90000 - 0x74ddb000 	C:\Windows\syswow64\urlmon.dll
+0x75f00000 - 0x75f04000 	C:\Windows\syswow64\api-ms-win-downlevel-ole32-l1-1-0.dll
+0x682b0000 - 0x682e4000 	C:\Analog_Devices\CrossCore_Embedded Studio_1.2.0\System\ProcFrio.dll
+0x64770000 - 0x647d8000 	C:\Analog_Devices\CrossCore_Embedded Studio_1.2.0\System\Symman.dll
+0x68c00000 - 0x68c25000 	C:\Analog_Devices\CrossCore_Embedded Studio_1.2.0\System\libelf.dll
+0x699c0000 - 0x699d2000 	C:\Analog_Devices\CrossCore_Embedded Studio_1.2.0\System\slad.dll
+0x67ba0000 - 0x67bc2000 	C:\Analog_Devices\CrossCore_Embedded Studio_1.2.0\System\edg_decode.dll
+0x64710000 - 0x64766000 	C:\Analog_Devices\CrossCore_Embedded Studio_1.2.0\System\sldFRIO.dll
+0x75cc0000 - 0x75cc5000 	C:\Windows\system32\PSAPI.DLL
+0x70230000 - 0x7031b000 	C:\Windows\system32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -Xmx512M -XX:MaxPermSize=128M -Dosgi.instance.area.default=@user.home/CrossCore Embedded Studio 
+java_command: <unknown>
+Launcher Type: generic
+
+Environment Variables:
+PATH=C:/Analog_Devices/CrossCore_Embedded Studio_1.2.0/Eclipse//jre/bin/client;C:/Analog_Devices/CrossCore_Embedded Studio_1.2.0/Eclipse//jre/bin;C:/Analog_Devices/CrossCore_Embedded Studio_1.2.0/Eclipse//jre/lib/i386;C:/ti/xdctools_3_23_02_47;C:\CMake\bin;C:\Program Files\Java\jdk8\bin;C:\Program Files\Java\jre8\bin;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\opencv\build\x86\vc12\bin;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files (x86)\Microsoft SDKs\TypeScript\1.0\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\opencv-install\install\x86\mingw\bin;C:\GnuWin32\bin;C:\MINGWF\MinGW\bin;C:\mingw-w64\x86_64-5.2.0-win32-sjlj-rt_v4-rev1\mingw64\bin;C:\ti\gcc\bin;C:/ti/xdctools_3_23_02_47;C:\Analog_Devices\CrossCore_Embedded Studio_1.2.0\Eclipse;
+USERNAME=aamaravati3
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 60 Stepping 3, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 7 , 64 bit Build 7601 Service Pack 1
+
+CPU:total 8 (4 cores per cpu, 2 threads per core) family 6 model 60 stepping 3, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, ht
+
+Memory: 4k page, physical 16717972k(10546976k free), swap 33434088k(26955736k free)
+
+vm_info: Java HotSpot(TM) Client VM (20.14-b01) for windows-x86 JRE (1.6.0_39-b04), built on Jan 15 2013 14:00:47 by "java_re" with MS VC++ 7.1 (VS2003)
+
+time: Tue Dec 29 13:04:20 2015
+elapsed time: 610 seconds
+

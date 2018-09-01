@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="blackfin.toolchain.configuration.debug.1320848363">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="blackfin.toolchain.configuration.debug.1320848363" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<macros>
+					<stringMacro name="addin-name" type="VALUE_TEXT" value="ADZS-BF707-BLIP2 Examples"/>
+					<stringMacro name="graphics2d-blackfin-lib" type="VALUE_TEXT" value=""/>
+				</macros>
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.analog.crosscore.managedbuilder.core.errorparser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,com.analog.crosscore.managedbuilder.buildType=com.analog.crosscore.managedbuilder.buildType.debug" cleanCommand="clean" description="" id="blackfin.toolchain.configuration.debug.1320848363" name="Debug" parent="blackfin.toolchain.configuration.debug">
+					<folderInfo id="blackfin.toolchain.configuration.debug.1320848363." name="/" resourcePath="">
+						<toolChain id="blackfin.toolchain.debug.576974963" isAbstract="false" name="CrossCore Blackfin Toolchain" superClass="blackfin.toolchain" targetTool="blackfin.toolchain.linker">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="blackfin.platform.650890993" name="CrossCore Blackfin Target Platform" osList="all" superClass="blackfin.platform"/>
+							<builder buildPath="${workspace_loc:/FrameCapture_ClassDriver_OV7692/Debug}" id="blackfin.toolchain.builder.750808407" keepEnvironmentInBuildfile="false" name="CrossCore Blackfin Builder" superClass="blackfin.toolchain.builder"/>
+							<tool id="blackfin.toolchain.assembler.549033840" name="CrossCore Blackfin Assembler" superClass="blackfin.toolchain.assembler">
+								<option id="assembler.option.debugcode.2101991162" name="Generate debug information (-g)" superClass="assembler.option.debugcode"/>
+								<option id="assembler.option.proc.735257191" name="-proc" superClass="assembler.option.proc" value=" ADSP-BF707" valueType="string"/>
+								<option id="assembler.option.sirevision.420335260" name="-si-revision" superClass="assembler.option.sirevision" value=" any" valueType="string"/>
+								<option id="assembler.option.preprocessdefs.367528032" name="Preprocessor definitions (-D):" superClass="assembler.option.preprocessdefs" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="_DEBUG"/>
+									<listOptionValue builtIn="false" value="CORE0"/>
+								</option>
+								<option id="assembler.option.additionaldirectories.971424638" name="Additional include directories (-I):" superClass="assembler.option.additionaldirectories" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/system}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${COM_ANALOG_CROSSCORE_ADDINS_BF707_BLIP2_1_0_0_LOC}/Blackfin/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${COM_ANALOG_SWMODULE_IMAGEPROCESSINGTOOLBOX_BLACKFIN_2_4_0_LOC}/Include&quot;"/>
+								</option>
+								<inputType id="assembler.input.1199533040" name="Assembler Source" superClass="assembler.input"/>
+							</tool>
+							<tool id="blackfin.toolchain.compiler.512651081" name="CrossCore Blackfin C/C++ Compiler" superClass="blackfin.toolchain.compiler">
+								<option id="compiler.option.optimization.429366146" name="Enable optimization (-O)" superClass="compiler.option.optimization"/>
+								<option id="compiler.option.debugcode.180746284" name="Generate debug information (-g)" superClass="compiler.option.debugcode"/>
+								<option id="compiler.option.proc.1986119882" name="-proc" superClass="compiler.option.proc" value=" ADSP-BF707" valueType="string"/>
+								<option id="compiler.option.sirevision.1723174068" name="-si-revision" superClass="compiler.option.sirevision" value=" any" valueType="string"/>
+								<option id="compiler.option.preprocessdefs.508954383" name="Preprocessor definitions (-D):" superClass="compiler.option.preprocessdefs" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="_DEBUG"/>
+									<listOptionValue builtIn="false" value="__ADSPBF707_BLIP2__"/>
+									<listOptionValue builtIn="false" value="ENA_OV7692_SENSOR"/>
+									<listOptionValue builtIn="false" value="CORE0"/>
+								</option>
+								<option id="compiler.option.additionaldirectories.1425921208" name="Additional include directories (-I):" superClass="compiler.option.additionaldirectories" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/system}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${CCES}/Blackfin/lib/src/drivers/source/device_class&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${COM_ANALOG_CROSSCORE_ADDINS_BF707_BLIP2_1_0_0_LOC}/Blackfin/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${COM_ANALOG_SWMODULE_GRAPHICS2D_BLACKFIN_4_1_0_LOC}/Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${COM_ANALOG_SWMODULE_IMAGEPROCESSINGTOOLBOX_BLACKFIN_2_4_0_LOC}/Include&quot;"/>
+								</option>
+								<option id="blackfin.compiler.option.utility_rom.2049154434" name="utilityrom" superClass="blackfin.compiler.option.utility_rom" value="-no-utility-rom" valueType="string"/>
+								<option id="compiler.option.coreid.1728340979" superClass="compiler.option.coreid" value="0" valueType="string"/>
+								<inputType id="compiler.inputType.331517828" name="C/C++ Source" superClass="compiler.inputType"/>
+							</tool>
+							<tool id="blackfin.toolchain.linker.1317156398" name="CrossCore Blackfin Linker" superClass="blackfin.toolchain.linker">
+								<option id="linker.option.individmap.54665077" name="Individually map functions and data items (-ip)" superClass="linker.option.individmap" value="false" valueType="boolean"/>
+								<option id="linker.option.eliminateunused.921948029" name="Eliminate unused objects (-e)" superClass="linker.option.eliminateunused"/>
+								<option id="linker.option.usedbglib.1269138470" name="Use Debug System libraries (-add-debug-libpaths)" superClass="linker.option.usedbglib"/>
+								<option id="linker.option.proc.959151519" name="-proc" superClass="linker.option.proc" value=" ADSP-BF707" valueType="string"/>
+								<option id="linker.option.sirevision.957387866" name="-si-revision" superClass="linker.option.sirevision" value=" any" valueType="string"/>
+								<option id="linker.option.preprocessdefs.119246742" name="Preprocessor definitions (-MD)" superClass="linker.option.preprocessdefs" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="DEBUG"/>
+									<listOptionValue builtIn="false" value="CORE0"/>
+								</option>
+								<option id="linker.option.ldfprocessing.ldffile.1146397727" name="Custom LDF (-T)" superClass="linker.option.ldfprocessing.ldffile" value="&quot;${ProjDirPath}/system/startup_ldf/app.ldf&quot;" valueType="string"/>
+								<option id="linker.option.srchdir.1826176490" name="Library search directories (-L):" superClass="linker.option.srchdir" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;${OutDir}/system/startup_ldf&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${COM_ANALOG_SWMODULE_GRAPHICS2D_BLACKFIN_4_1_0_LOC}/Lib-Production-CCES&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${COM_ANALOG_SWMODULE_IMAGEPROCESSINGTOOLBOX_BLACKFIN_2_4_0_LOC}/Lib-Production-CCES&quot;"/>
+								</option>
+								<option id="blackfin.linker.option.memusage.1743679226" name="Memory Usage" superClass="blackfin.linker.option.memusage" value="blackfin.linker.option.memusage.enumerated.internalsramonly" valueType="enumerated"/>
+								<option id="blackfin.linker.option.utility_rom.274080738" name="Utility ROM" superClass="blackfin.linker.option.utility_rom" value="blackfin.linker.option.utility_rom.enumerated.disabled" valueType="enumerated"/>
+								<option id="blackfin.linker.option.additionaloptions.1709415672" name="Additional options for the linker:" superClass="blackfin.linker.option.additionaloptions" valueType="stringList">
+									<listOptionValue builtIn="false" value="libadi_graphics2d.dlb"/>
+									<listOptionValue builtIn="false" value="libadi_image_tool_box_cces_bf70x.dlb"/>
+								</option>
+								<inputType id="linker.doj.input.2117244999" name="Object Files" superClass="linker.doj.input"/>
+							</tool>
+							<tool id="blackfin.toolchain.archiver.382737378" name="CrossCore Blackfin Archiver" superClass="blackfin.toolchain.archiver">
+								<option id="archiver.option.proc.1740407235" name="-proc" superClass="archiver.option.proc" value=" ADSP-BF707" valueType="string"/>
+								<option id="archiver.option.sirevision.230146383" name="-si-revision" superClass="archiver.option.sirevision" value=" any" valueType="string"/>
+							</tool>
+							<tool id="blackfin.toolchain.loader.271072619" name="CrossCore Blackfin Loader" superClass="blackfin.toolchain.loader">
+								<option id="loader.option.proc.1405249082" name="-proc" superClass="loader.option.proc" value=" ADSP-BF707" valueType="string"/>
+								<option id="loader.option.sirevision.696612318" name="-si-revision" superClass="loader.option.sirevision" value=" any" valueType="string"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="system|src" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="system"/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="blackfin.toolchain.configuration.release.1307051742">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="blackfin.toolchain.configuration.release.1307051742" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<macros>
+					<stringMacro name="addin-name" type="VALUE_TEXT" value="ADZS-BF707-BLIP2 Examples"/>
+					<stringMacro name="graphics2d-blackfin-lib" type="VALUE_TEXT" value=""/>
+				</macros>
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.analog.crosscore.managedbuilder.core.errorparser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,com.analog.crosscore.managedbuilder.buildType=com.analog.crosscore.managedbuilder.buildType.release" cleanCommand="clean" description="" id="blackfin.toolchain.configuration.release.1307051742" name="Release" parent="blackfin.toolchain.configuration.release">
+					<folderInfo id="blackfin.toolchain.configuration.release.1307051742." name="/" resourcePath="">
+						<toolChain id="blackfin.toolchain.release.514264715" isAbstract="false" name="CrossCore Blackfin Toolchain" superClass="blackfin.toolchain" targetTool="blackfin.toolchain.linker">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="blackfin.platform.1144961084" name="CrossCore Blackfin Target Platform" osList="all" superClass="blackfin.platform"/>
+							<builder buildPath="${workspace_loc:/FrameCapture_ClassDriver_OV7692/Release}" id="blackfin.toolchain.builder.277190644" keepEnvironmentInBuildfile="false" name="CrossCore Blackfin Builder" superClass="blackfin.toolchain.builder"/>
+							<tool id="blackfin.toolchain.assembler.2122435462" name="CrossCore Blackfin Assembler" superClass="blackfin.toolchain.assembler">
+								<option id="assembler.option.debugcode.1953109570" name="Generate debug information (-g)" superClass="assembler.option.debugcode" value="false" valueType="boolean"/>
+								<option id="assembler.option.proc.1175973755" name="-proc" superClass="assembler.option.proc" value=" ADSP-BF707" valueType="string"/>
+								<option id="assembler.option.sirevision.459189539" name="-si-revision" superClass="assembler.option.sirevision" value=" any" valueType="string"/>
+								<option id="assembler.option.preprocessdefs.1002041973" name="Preprocessor definitions (-D):" superClass="assembler.option.preprocessdefs" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="NDEBUG"/>
+									<listOptionValue builtIn="false" value="CORE0"/>
+								</option>
+								<option id="assembler.option.additionaldirectories.671977482" name="Additional include directories (-I):" superClass="assembler.option.additionaldirectories" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/system}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${COM_ANALOG_CROSSCORE_ADDINS_BF707_BLIP2_1_0_0_LOC}/Blackfin/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${COM_ANALOG_SWMODULE_IMAGEPROCESSINGTOOLBOX_BLACKFIN_2_4_0_LOC}/Include&quot;"/>
+								</option>
+								<inputType id="assembler.input.1351028914" name="Assembler Source" superClass="assembler.input"/>
+							</tool>
+							<tool id="blackfin.toolchain.compiler.1413165953" name="CrossCore Blackfin C/C++ Compiler" superClass="blackfin.toolchain.compiler">
+								<option id="compiler.option.optimization.1983336732" name="Enable optimization (-O)" superClass="compiler.option.optimization" value="true" valueType="boolean"/>
+								<option id="compiler.option.debugcode.2050658030" name="Generate debug information (-g)" superClass="compiler.option.debugcode" value="false" valueType="boolean"/>
+								<option id="compiler.option.proc.1158287174" name="-proc" superClass="compiler.option.proc" value=" ADSP-BF707" valueType="string"/>
+								<option id="compiler.option.sirevision.40303241" name="-si-revision" superClass="compiler.option.sirevision" value=" any" valueType="string"/>
+								<option id="compiler.option.preprocessdefs.673253876" name="Preprocessor definitions (-D):" superClass="compiler.option.preprocessdefs" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="NDEBUG"/>
+									<listOptionValue builtIn="false" value="__ADSPBF707_BLIP2__"/>
+									<listOptionValue builtIn="false" value="ENA_OV7692_SENSOR"/>
+									<listOptionValue builtIn="false" value="CORE0"/>
+								</option>
+								<option id="compiler.option.additionaldirectories.2129738671" name="Additional include directories (-I):" superClass="compiler.option.additionaldirectories" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/system}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${CCES}/Blackfin/lib/src/drivers/source/device_class&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${COM_ANALOG_CROSSCORE_ADDINS_BF707_BLIP2_1_0_0_LOC}/Blackfin/include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${COM_ANALOG_SWMODULE_GRAPHICS2D_BLACKFIN_4_1_0_LOC}/Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${COM_ANALOG_SWMODULE_IMAGEPROCESSINGTOOLBOX_BLACKFIN_2_4_0_LOC}/Include&quot;"/>
+								</option>
+								<option id="blackfin.compiler.option.utility_rom.968245814" name="utilityrom" superClass="blackfin.compiler.option.utility_rom" value="-no-utility-rom" valueType="string"/>
+								<option id="compiler.option.coreid.1374294437" superClass="compiler.option.coreid" value="0" valueType="string"/>
+								<inputType id="compiler.inputType.1184898697" name="C/C++ Source" superClass="compiler.inputType"/>
+							</tool>
+							<tool id="blackfin.toolchain.linker.2109735310" name="CrossCore Blackfin Linker" superClass="blackfin.toolchain.linker">
+								<option defaultValue="true" id="linker.option.individmap.845409150" name="Individually map functions and data items (-ip)" superClass="linker.option.individmap" valueType="boolean"/>
+								<option id="linker.option.eliminateunused.1546601193" name="Eliminate unused objects (-e)" superClass="linker.option.eliminateunused" value="true" valueType="boolean"/>
+								<option id="linker.option.usedbglib.2058810272" name="Use Debug System libraries (-add-debug-libpaths)" superClass="linker.option.usedbglib" value="false" valueType="boolean"/>
+								<option id="linker.option.proc.899582564" name="-proc" superClass="linker.option.proc" value=" ADSP-BF707" valueType="string"/>
+								<option id="linker.option.sirevision.893374762" name="-si-revision" superClass="linker.option.sirevision" value=" any" valueType="string"/>
+								<option id="linker.option.preprocessdefs.923278442" name="Preprocessor definitions (-MD)" superClass="linker.option.preprocessdefs" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="RELEASE"/>
+									<listOptionValue builtIn="false" value="CORE0"/>
+								</option>
+								<option id="linker.option.ldfprocessing.ldffile.1388991972" name="Custom LDF (-T)" superClass="linker.option.ldfprocessing.ldffile" value="&quot;${ProjDirPath}/system/startup_ldf/app.ldf&quot;" valueType="string"/>
+								<option id="linker.option.srchdir.217533563" name="Library search directories (-L):" superClass="linker.option.srchdir" valueType="libPaths">
+									<listOptionValue builtIn="false" value="&quot;${OutDir}/system/startup_ldf&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${COM_ANALOG_SWMODULE_GRAPHICS2D_BLACKFIN_4_1_0_LOC}/Lib-Production-CCES&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${COM_ANALOG_SWMODULE_IMAGEPROCESSINGTOOLBOX_BLACKFIN_2_4_0_LOC}/Lib-Production-CCES&quot;"/>
+								</option>
+								<option id="blackfin.linker.option.memusage.99950630" name="Memory Usage" superClass="blackfin.linker.option.memusage" value="blackfin.linker.option.memusage.enumerated.internalsramonly" valueType="enumerated"/>
+								<option id="blackfin.linker.option.utility_rom.1768198947" name="Utility ROM" superClass="blackfin.linker.option.utility_rom" value="blackfin.linker.option.utility_rom.enumerated.disabled" valueType="enumerated"/>
+								<option id="blackfin.linker.option.additionaloptions.1583823964" name="Additional options for the linker:" superClass="blackfin.linker.option.additionaloptions" valueType="stringList">
+									<listOptionValue builtIn="false" value="libadi_graphics2d.dlb"/>
+									<listOptionValue builtIn="false" value="libadi_image_tool_box_cces_bf70x.dlb"/>
+								</option>
+								<inputType id="linker.doj.input.1518202711" name="Object Files" superClass="linker.doj.input"/>
+							</tool>
+							<tool id="blackfin.toolchain.archiver.1624517645" name="CrossCore Blackfin Archiver" superClass="blackfin.toolchain.archiver">
+								<option id="archiver.option.proc.258625908" name="-proc" superClass="archiver.option.proc" value=" ADSP-BF707" valueType="string"/>
+								<option id="archiver.option.sirevision.9490959" name="-si-revision" superClass="archiver.option.sirevision" value=" any" valueType="string"/>
+							</tool>
+							<tool id="blackfin.toolchain.loader.1566165259" name="CrossCore Blackfin Loader" superClass="blackfin.toolchain.loader">
+								<option id="loader.option.proc.2010961210" name="-proc" superClass="loader.option.proc" value=" ADSP-BF707" valueType="string"/>
+								<option id="loader.option.sirevision.1324568872" name="-si-revision" superClass="loader.option.sirevision" value=" any" valueType="string"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="system"/>
+						<entry excluding="system|src" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="FrameCapture_ClassDriver_OV7692.blackfin.projecttype.dxe.1484507290" name="Blackfin Executable Project" projectType="blackfin.projecttype.dxe"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="blackfin.toolchain.configuration.debug.1320848363;blackfin.toolchain.configuration.debug.1320848363.;blackfin.toolchain.assembler.549033840;assembler.input.1199533040">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.analog.crosscore.managedbuilder.core.AssemblerDiscoveryProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="blackfin.toolchain.configuration.release.1307051742;blackfin.toolchain.configuration.release.1307051742.;blackfin.toolchain.linker.2109735310;linker.doj.input.1518202711">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.analog.crosscore.managedbuilder.core.LinkerDiscoveryProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="blackfin.toolchain.configuration.debug.1320848363;blackfin.toolchain.configuration.debug.1320848363.;blackfin.toolchain.linker.1317156398;linker.doj.input.2117244999">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.analog.crosscore.managedbuilder.core.LinkerDiscoveryProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="blackfin.toolchain.configuration.release.1307051742;blackfin.toolchain.configuration.release.1307051742.;blackfin.toolchain.compiler.1413165953;compiler.inputType.1184898697">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.analog.crosscore.managedbuilder.core.CompilerDiscoveryProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="blackfin.toolchain.configuration.release.1307051742;blackfin.toolchain.configuration.release.1307051742.;blackfin.toolchain.assembler.2122435462;assembler.input.1351028914">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.analog.crosscore.managedbuilder.core.AssemblerDiscoveryProfile"/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="blackfin.toolchain.configuration.debug.1320848363;blackfin.toolchain.configuration.debug.1320848363.;blackfin.toolchain.compiler.512651081;compiler.inputType.331517828">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="com.analog.crosscore.managedbuilder.core.CompilerDiscoveryProfile"/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.language.mapping">
+		<project-mappings>
+			<content-type-mapping configuration="" content-type="org.eclipse.cdt.core.cHeader" language="org.eclipse.cdt.core.c.adi.extension"/>
+			<content-type-mapping configuration="" content-type="org.eclipse.cdt.core.cSource" language="org.eclipse.cdt.core.c.adi.extension"/>
+			<content-type-mapping configuration="" content-type="org.eclipse.cdt.core.cxxHeader" language="org.eclipse.cdt.core.c++.adi.extension"/>
+			<content-type-mapping configuration="" content-type="org.eclipse.cdt.core.cxxSource" language="org.eclipse.cdt.core.c++.adi.extension"/>
+		</project-mappings>
+	</storageModule>
+	<storageModule moduleId="refreshScope" versionNumber="1">
+		<resource resourceType="PROJECT" workspacePath="/FDmatRand"/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+</cproject>

@@ -1,0 +1,13 @@
+system/drivers/device_class/adi_dev_class.doj: ../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.4.0/Blackfin/lib/src/drivers/source/device_class/adi_dev_class.c
+system/drivers/device_class/adi_dev_class.doj: ../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.4.0/Blackfin/include/adi_types.h
+system/drivers/device_class/adi_dev_class.doj: ../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.4.0/Blackfin/include/stdint.h
+system/drivers/device_class/adi_dev_class.doj: ../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.4.0/Blackfin/include/yvals.h
+system/drivers/device_class/adi_dev_class.doj: ../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.4.0/Blackfin/include/stdbool.h
+system/drivers/device_class/adi_dev_class.doj: ../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.4.0/Blackfin/include/stdlib.h
+system/drivers/device_class/adi_dev_class.doj: ../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.4.0/Blackfin/include/stdlib_bf.h
+system/drivers/device_class/adi_dev_class.doj: ../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.4.0/Blackfin/include/builtins.h
+system/drivers/device_class/adi_dev_class.doj: ../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.4.0/Blackfin/include/sys/builtins_support.h
+system/drivers/device_class/adi_dev_class.doj: ../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.4.0/Blackfin/include/drivers/device_class/adi_dev_class.h
+system/drivers/device_class/adi_dev_class.doj: ../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.4.0/Blackfin/include/adi_osal.h
+system/drivers/device_class/adi_dev_class.doj: ../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.4.0/Blackfin/include/adi_osal_arch.h
+system/drivers/device_class/adi_dev_class.doj: ../../../../../Analog\ Devices/CrossCore\ Embedded\ Studio\ 2.4.0/Blackfin/lib/src/drivers/source/device_class/adi_dev_class_common.h
